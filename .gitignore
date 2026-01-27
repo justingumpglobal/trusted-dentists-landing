@@ -1,0 +1,17 @@
+# Internal documentation
+CLAUDE.md
+IMAGE-PROMPTS.md
+
+# Google Ads exports (business data)
+ad-exports/
+current_ad_groups.txt
+
+# OS files
+.DS_Store
+*/.DS_Store
+
+# Editor files
+*.swp
+*.swo
+.vscode/
+.idea/
