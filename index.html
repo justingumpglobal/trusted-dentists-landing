@@ -210,22 +210,19 @@
       animation: subtle-ring 2s ease-in-out infinite;
     }
 
-    /* Spacer to prevent content from hiding under fixed header */
-    .header-spacer {
-      height: 85px;
-    }
-
     /* ========================================
        HERO SECTION
        ======================================== */
     .hero {
       background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-      padding: 32px 20px 40px;
+      padding: 0 20px 40px;
+      margin-top: 85px;
     }
 
     .hero__content {
       max-width: var(--container-max);
       margin: 0 auto;
+      padding-top: 32px;
     }
 
     .hero__badge {
@@ -1153,10 +1150,6 @@
         --section-padding: 64px 40px;
       }
 
-      .header-spacer {
-        height: 70px;
-      }
-
       .sticky-header {
         padding: 12px 40px;
       }
@@ -1174,7 +1167,8 @@
       }
 
       .hero {
-        padding: 48px 40px 64px;
+        padding: 0 40px 64px;
+        margin-top: 70px;
       }
 
       .hero__content {
@@ -1182,6 +1176,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 48px;
         align-items: center;
+        padding-top: 48px;
       }
 
       .hero__headline {
@@ -1268,8 +1263,6 @@
       Call by <strong id="urgency-time-mobile">5PM</strong> for Same-Day Appointments
     </div>
   </header>
-
-  <div class="header-spacer"></div>
 
   <!-- ========================================
        HERO SECTION
