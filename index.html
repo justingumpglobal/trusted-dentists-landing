@@ -1204,8 +1204,99 @@
         margin-top: 24px;
       }
 
+      /* Desktop: convert ALL btn-cta from buttons to plain phone numbers */
       .btn-cta {
-        max-width: 360px;
+        max-width: none;
+        background: none;
+        color: var(--color-primary);
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        animation: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
+      .btn-cta:hover,
+      .btn-cta:focus {
+        background: none;
+        transform: none;
+        box-shadow: none;
+      }
+
+      .btn-cta svg {
+        display: none;
+      }
+
+      .btn-cta > span {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      /* The CTA action text becomes smaller label above the number */
+      .btn-cta > span > span:first-child,
+      .btn-cta > span > [data-dynamic] {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--color-text);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      /* The phone number becomes the big, bold, prominent element */
+      .btn-cta__subtext {
+        font-size: 2rem !important;
+        font-weight: 800 !important;
+        color: var(--color-primary) !important;
+        opacity: 1 !important;
+        margin-top: 0 !important;
+        letter-spacing: -0.02em;
+      }
+
+      .btn-cta__subtext--phone {
+        font-size: 2.2rem !important;
+      }
+
+      /* Header CTA: plain phone number on desktop */
+      .sticky-header__cta {
+        background: none;
+        color: var(--color-primary);
+        padding: 0;
+        border-radius: 0;
+        font-size: 1.1rem;
+        font-weight: 800;
+        letter-spacing: -0.01em;
+      }
+
+      .sticky-header__cta:hover,
+      .sticky-header__cta:focus {
+        background: none;
+        color: var(--color-primary-dark);
+      }
+
+      .sticky-header__cta svg {
+        display: none;
+      }
+
+      /* Final CTA section: center the phone number treatment */
+      .final-cta .btn-cta {
+        align-items: center;
+        text-align: center;
+      }
+
+      .final-cta .btn-cta > span {
+        align-items: center;
+      }
+
+      .final-cta .btn-cta > span > span:first-child {
+        color: rgba(255,255,255,0.85);
+      }
+
+      .final-cta .btn-cta__subtext {
+        color: white !important;
       }
 
       .section-title {
